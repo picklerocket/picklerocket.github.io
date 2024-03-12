@@ -206,14 +206,14 @@ a {
 .pickle .medium_title1_box {
   align-items: center;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-center;
   margin: 18px 17px 19px 15px;
 }
 .pickle .medium_title1 {
   color: rgb(255, 255, 255);
   font: 500 24px/1.2 "Montserrat", Helvetica, Arial, serif;
   letter-spacing: -0.72px;
-  text-align: right;
+  text-align: center;
 }
 @media (max-width: 1199px) {
   .pickle .medium_title1 {
