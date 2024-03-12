@@ -1,0 +1,799 @@
+.button-pressed {
+  transform: translateY(2px);
+}
+
+input[type=text] {
+  font-size: 16px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+input[type=text]::-moz-placeholder {
+  color: #aaa;
+  font-family: Arial, sans-serif;
+}
+
+input[type=text]::placeholder {
+  color: #aaa;
+  font-family: Arial, sans-serif;
+}
+
+input[type=text]:focus {
+  outline: none;
+  border: 1px solid #666;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pickle.main {
+  background-color: rgb(223, 238, 217);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.pickle .section2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.pickle .big_title1 {
+  bottom: -7778px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font: 500 36.9160919189px/1.2 "Montserrat", Helvetica, Arial, serif;
+  height: 45px;
+  justify-content: center;
+  position: absolute;
+  right: -3px;
+  text-align: center;
+  text-shadow: 0px 0px 0px rgb(0, 0, 0);
+  width: 630px;
+}
+@media (max-width: 1199px) {
+  .pickle .big_title1 {
+    align-items: flex-start;
+    font-size: 32px;
+  }
+}
+@media (max-width: 991px) {
+  .pickle .big_title1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .pickle .big_title1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 479px) {
+  .pickle .big_title1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 383px) {
+  .pickle .big_title1 {
+    font-size: 16px;
+  }
+}
+.pickle .flex_row {
+  display: flex;
+  margin: 67px auto 316px;
+  position: relative;
+  width: 1115px;
+}
+@media (max-width: 1399px) {
+  .pickle .flex_row {
+    gap: 16px;
+  }
+}
+.pickle .flex_col {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 28px 0px;
+  margin: 186.5px 0px 93px;
+  width: 585px;
+}
+@media (max-width: 1399px) {
+  .pickle .flex_col {
+    flex: 0 0 auto;
+    width: calc((100% - 16px) * 0.5);
+  }
+}
+.pickle .hero_title1 {
+  align-items: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  font: 500 64px/1.21 "Montserrat", Helvetica, Arial, serif;
+  letter-spacing: -1.92px;
+}
+@media (max-width: 1199px) {
+  .pickle .hero_title1 {
+    font-size: 56px;
+  }
+}
+@media (max-width: 991px) {
+  .pickle .hero_title1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .pickle .hero_title1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .pickle .hero_title1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 479px) {
+  .pickle .hero_title1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 383px) {
+  .pickle .hero_title1 {
+    font-size: 20px;
+  }
+}
+.pickle .flex_row1 {
+  align-items: center;
+  display: flex;
+  gap: 0px 23px;
+  width: 100%;
+}
+.pickle .content_box1 {
+  display: flex;
+  flex-direction: column;
+  min-height: 66px;
+  position: relative;
+  width: 286px;
+}
+.pickle .medium_title2 {
+  align-items: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  font: 500 24px/1.2 "Montserrat", Helvetica, Arial, serif;
+  height: 29px;
+  justify-content: flex-end;
+  left: 25px;
+  letter-spacing: -0.72px;
+  position: absolute;
+  text-align: right;
+  top: 18px;
+  width: 225px;
+}
+@media (max-width: 1199px) {
+  .pickle .medium_title2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .pickle .medium_title2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 383px) {
+  .pickle .medium_title2 {
+    font-size: 12px;
+  }
+}
+.pickle .rect7 {
+  background-color: transparent;
+  border-radius: 12px 12px 12px 12px;
+  height: 66px;
+  left: 0px;
+  outline: 0.5px solid rgb(0, 0, 0);
+  outline-offset: -0.5px;
+  position: absolute;
+  top: 0px;
+  width: 286px;
+}
+.pickle .content_box {
+  background-color: rgb(163, 181, 57);
+  border-radius: 12px 12px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  width: 188px;
+}
+.pickle .medium_title1_box {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin: 18px 17px 19px 15px;
+}
+.pickle .medium_title1 {
+  color: rgb(255, 255, 255);
+  font: 500 24px/1.2 "Montserrat", Helvetica, Arial, serif;
+  letter-spacing: -0.72px;
+  text-align: right;
+}
+@media (max-width: 1199px) {
+  .pickle .medium_title1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .pickle .medium_title1 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 383px) {
+  .pickle .medium_title1 {
+    font-size: 12px;
+  }
+}
+.pickle .medium_title1_span0 {
+  font: 500 1em/1.2 "Montserrat", Helvetica, Arial, serif;
+}
+.pickle .medium_title1_span1 {
+  font: 900 1em/1.2 "Montserrat", Helvetica, Arial, serif;
+}
+.pickle .image {
+  flex: 1 1 auto;
+  width: 530px;
+}
+@media (max-width: 1399px) {
+  .pickle .image {
+    flex: 0 0 auto;
+    width: calc((100% - 16px) * 0.5);
+  }
+}
+.pickle .section3 {
+  display: flex;
+  flex-direction: column;
+}
+.pickle .flex_row2 {
+  align-items: center;
+  display: flex;
+  gap: 0px 10px;
+  justify-content: space-between;
+  margin: 188px auto 292px;
+  width: 91.51%;
+}
+.pickle .image2 {
+  width: 400px;
+}
+.pickle .hero_title2 {
+  align-items: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  font: 500 30.3333282471px/1.21 "Montserrat", Helvetica, Arial, serif;
+  justify-content: flex-end;
+  letter-spacing: -1.6px;
+  text-align: right;
+}
+
+.pickle .image1 {
+  width: 400px;
+}
+.pickle .hero_title3 {
+  align-items: center;
+  color: rgb(30, 29, 18);
+  display: flex;
+  font: 900 384.3584594727px/0.75 "Montserrat", Helvetica, Arial, serif;
+  justify-content: flex-end;
+  letter-spacing: -11.53px;
+  margin: 481px auto 354px;
+  text-align: right;
+  width: 1202px;
+}
+@media (max-width: 1199px) {
+  .pickle .hero_title3 {
+    font-size: 328px;
+  }
+}
+@media (max-width: 991px) {
+  .pickle .hero_title3 {
+    font-size: 268px;
+  }
+}
+@media (max-width: 767px) {
+  .pickle .hero_title3 {
+    font-size: 216px;
+  }
+}
+@media (max-width: 575px) {
+  .pickle .hero_title3 {
+    font-size: 192px;
+  }
+}
+@media (max-width: 479px) {
+  .pickle .hero_title3 {
+    font-size: 164px;
+  }
+}
+@media (max-width: 383px) {
+  .pickle .hero_title3 {
+    font-size: 64px;
+  }
+}
+.pickle .section5 {
+  display: flex;
+  flex-direction: column;
+}
+.pickle .flex_row3 {
+  align-items: center;
+  display: flex;
+  gap: 0px 10px;
+  justify-content: space-between;
+  margin: 163px auto 263px;
+  padding: 0px 13px 0px 0px;
+  width: 822px;
+}
+.pickle .content_box2 {
+  display: flex;
+  flex-direction: column;
+  min-height: 197px;
+  position: relative;
+  width: 330px;
+}
+.pickle .rect2 {
+  background-color: rgb(163, 181, 57);
+  height: 84px;
+  left: 0px;
+  position: absolute;
+  top: 53px;
+  width: 275px;
+}
+.pickle .image3 {
+  height: 197px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 75px;
+}
+.pickle .hero_title4 {
+  align-items: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font: 900 45.4692306519px/1.2 "Montserrat", Helvetica, Arial, serif;
+  height: 55px;
+  justify-content: flex-end;
+  left: 71px;
+  letter-spacing: -1.36px;
+  position: absolute;
+  text-align: center;
+  top: 68px;
+  width: 134px;
+}
+@media (max-width: 1199px) {
+  .pickle .hero_title4 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .pickle .hero_title4 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .pickle .hero_title4 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 479px) {
+  .pickle .hero_title4 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 383px) {
+  .pickle .hero_title4 {
+    font-size: 16px;
+  }
+}
+.pickle .content_box3 {
+  display: flex;
+  flex-direction: column;
+  min-height: 197px;
+  position: relative;
+  width: 330px;
+}
+.pickle .rect1 {
+  background-color: rgb(140, 87, 87);
+  height: 84px;
+  left: 0px;
+  position: absolute;
+  top: 54px;
+  width: 275px;
+}
+.pickle .hero_title41 {
+  align-items: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font: 900 45.4692306519px/1.2 "Montserrat", Helvetica, Arial, serif;
+  height: 55px;
+  justify-content: flex-end;
+  left: 0px;
+  letter-spacing: -1.36px;
+  position: absolute;
+  text-align: center;
+  top: 68px;
+  width: 302px;
+}
+@media (max-width: 1199px) {
+  .pickle .hero_title41 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .pickle .hero_title41 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .pickle .hero_title41 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 479px) {
+  .pickle .hero_title41 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 383px) {
+  .pickle .hero_title41 {
+    font-size: 16px;
+  }
+}
+.pickle .section6 {
+  display: flex;
+  flex-direction: column;
+}
+.pickle .section61 {
+  background-color: rgb(255, 254, 221);
+  border-radius: 35.5555534363px 35.5555534363px 35.5555534363px 35.5555534363px;
+  display: flex;
+  flex-direction: column;
+  margin: 179px auto 171px;
+  width: 86.09%;
+}
+.pickle .flex_row4 {
+  display: flex;
+  gap: 0px 10px;
+  justify-content: space-between;
+  margin: 84px 0px 119px 3.21%;
+  width: 76.89%;
+}
+.pickle .image6 {
+  width: 540px;
+}
+.pickle .flex_col1 {
+  display: flex;
+  flex-direction: column;
+  margin: 110px 0px 38px;
+  width: 568px;
+}
+.pickle .hero_title {
+  align-items: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  font: 700 53.3333282471px/1.21 "Montserrat", Helvetica, Arial, serif;
+  letter-spacing: -1.6px;
+}
+@media (max-width: 1199px) {
+  .pickle .hero_title {
+    font-size: 44px;
+  }
+}
+@media (max-width: 991px) {
+  .pickle .hero_title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .pickle .hero_title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 479px) {
+  .pickle .hero_title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 383px) {
+  .pickle .hero_title {
+    font-size: 16px;
+  }
+}
+.pickle .medium_title {
+  align-items: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  font: 700 26.6666641235px/1.23 "Montserrat", Helvetica, Arial, serif;
+  margin: 34px 0px 0px;
+}
+@media (max-width: 991px) {
+  .pickle .medium_title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .pickle .medium_title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 383px) {
+  .pickle .medium_title {
+    font-size: 12px;
+  }
+}
+.pickle .content_box4 {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px 0px;
+  min-height: 197px;
+  position: relative;
+  width: 331px;
+}
+.pickle .rect4 {
+  background-color: rgb(163, 181, 57);
+  height: 84px;
+  left: 0px;
+  position: absolute;
+  top: 53px;
+  width: 276px;
+}
+.pickle .hero_title42 {
+  align-items: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font: 900 45.4692306519px/1.2 "Montserrat", Helvetica, Arial, serif;
+  height: 55px;
+  justify-content: flex-end;
+  left: 79px;
+  letter-spacing: -1.36px;
+  position: absolute;
+  text-align: right;
+  top: 68px;
+  width: 134px;
+}
+@media (max-width: 1199px) {
+  .pickle .hero_title42 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .pickle .hero_title42 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .pickle .hero_title42 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 479px) {
+  .pickle .hero_title42 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 383px) {
+  .pickle .hero_title42 {
+    font-size: 16px;
+  }
+}
+.pickle .section7 {
+  display: flex;
+  flex-direction: column;
+}
+.pickle .flex_row5 {
+  display: flex;
+  gap: 0px 10px;
+  justify-content: space-between;
+  margin: 126px auto 275px;
+  width: 80.73%;
+}
+.pickle .flex_col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 47px 0px;
+  margin: 80px 0px 0px;
+  width: 830px;
+}
+.pickle .hero_title5 {
+  align-items: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  font: 800 53.3333282471px/1.21 "Montserrat", Helvetica, Arial, serif;
+  letter-spacing: -1.6px;
+}
+@media (max-width: 1199px) {
+  .pickle .hero_title5 {
+    font-size: 44px;
+  }
+}
+@media (max-width: 991px) {
+  .pickle .hero_title5 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .pickle .hero_title5 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 479px) {
+  .pickle .hero_title5 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 383px) {
+  .pickle .hero_title5 {
+    font-size: 16px;
+  }
+}
+.pickle .content_box5 {
+  display: flex;
+  flex-direction: column;
+  min-height: 197px;
+  position: relative;
+  width: 432px;
+}
+.pickle .rect5 {
+  background-color: rgb(140, 87, 87);
+  height: 84px;
+  left: 0px;
+  position: absolute;
+  top: 54px;
+  width: 377px;
+}
+.pickle .hero_title43 {
+  align-items: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font: 900 45.4692306519px/1.2 "Montserrat", Helvetica, Arial, serif;
+  height: 55px;
+  justify-content: flex-end;
+  left: 49px;
+  letter-spacing: -1.36px;
+  position: absolute;
+  text-align: right;
+  top: 68px;
+  width: 281px;
+}
+@media (max-width: 1199px) {
+  .pickle .hero_title43 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .pickle .hero_title43 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .pickle .hero_title43 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 479px) {
+  .pickle .hero_title43 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 383px) {
+  .pickle .hero_title43 {
+    font-size: 16px;
+  }
+}
+.pickle .image4 {
+  margin: 0px 0px 15px;
+  width: 606px;
+}
+.pickle .section8 {
+  display: flex;
+  flex-direction: column;
+}
+.pickle .section81 {
+  background-color: rgb(255, 254, 221);
+  border-radius: 35.5555534363px 35.5555534363px 35.5555534363px 35.5555534363px;
+  display: flex;
+  flex-direction: column;
+  margin: 68px auto 105px;
+  width: 86.15%;
+}
+.pickle .flex_row6 {
+  align-items: center;
+  display: flex;
+  gap: 0px 10px;
+  justify-content: space-between;
+  margin: 172px auto 155px;
+  width: 77.39%;
+}
+.pickle .image5 {
+  width: 384px;
+}
+.pickle .flex_col3 {
+  display: flex;
+  flex-direction: column;
+  gap: 28px 0px;
+  width: 751px;
+}
+.pickle .medium_title3 {
+  align-items: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  font: 700 26.6666641235px/1.23 "Montserrat", Helvetica, Arial, serif;
+  width: 88.15%;
+}
+@media (max-width: 991px) {
+  .pickle .medium_title3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .pickle .medium_title3 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 383px) {
+  .pickle .medium_title3 {
+    font-size: 12px;
+  }
+}
+.pickle .section9 {
+  display: flex;
+  flex-direction: column;
+}
+.pickle .hero_title6 {
+  align-items: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  font: 700 140.6153717041px/1.22 "Montserrat", Helvetica, Arial, serif;
+  letter-spacing: -6.98px;
+  margin: 174px auto 114px;
+  width: 76.15%;
+}
+.pickle .section10 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.pickle .decorator {
+  height: 1419px;
+  position: absolute;
+  right: -376px;
+  top: -149px;
+  width: 1419px;
+}
+.pickle .flex_row7 {
+  align-content: flex-start;
+  align-items: start;
+  display: flex;
+  gap: 0px 10px;
+  margin: 184px auto 590px;
+  position: relative;
+  width: 78.85%;
+}
+@media (max-width: 767px) {
+  .pickle .flex_row7 {
+    align-content: normal;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+.pickle .image9 {
+  margin: 20px 0px 8px;
+  width: 132px;
+}
+
+.pickle .image10 {
+  width: 135px;
+}
+
+.pickle .hero_title7 {
+  color: rgb(255, 255, 255);
+  display: flex;
+  font: 700 35.6153717041px/1.22 "Montserrat", Helvetica, Arial, serif;
+  letter-spacing: -2.98px;
+  width: 76.15%;
+}

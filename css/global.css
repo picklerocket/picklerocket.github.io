@@ -1,0 +1,31 @@
+.button-pressed {
+  transform: translateY(2px);
+}
+
+input[type=text] {
+  font-size: 16px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+input[type=text]::-moz-placeholder {
+  color: #aaa;
+  font-family: Arial, sans-serif;
+}
+
+input[type=text]::placeholder {
+  color: #aaa;
+  font-family: Arial, sans-serif;
+}
+
+input[type=text]:focus {
+  outline: none;
+  border: 1px solid #666;
+}
+
+a {
+  text-decoration: none;
+}
