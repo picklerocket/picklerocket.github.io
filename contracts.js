@@ -1,10 +1,10 @@
-
+let contract;
 // This function is called when the web page is loaded.
 window.addEventListener('load', function() {
     console.log(typeof window.ethereum)
     if (typeof window.ethereum !== 'undefined') {
         const web3 = new Web3(window.ethereum);
-        const contractAddress = "0x5FA0687047337FcdA0088182EC131a88DEC4fD50"; // Replace with your contract's address
+        const contractAddress = "0xf023ee7976588d8f78E94A1d9544164788B4321d"; // Replace with your contract's address
         const contractABI = [
             {
                 "inputs": [{"internalType": "uint256", "name": "_amount", "type": "uint256"}],
@@ -40,6 +40,8 @@ window.addEventListener('load', function() {
             }
         ]; 
         
+        contract = new web3.eth.Contract(contractABI, contractAddress);
+
         document.getElementById('connectWalletButton').addEventListener('click', function() {
             if (window.ethereum) { // Check if MetaMask is installed
                 window.ethereum.request({ method: 'eth_requestAccounts' }) // Prompt user to connect their wallet
@@ -103,8 +105,11 @@ window.addEventListener('load', function() {
         });
         // Adding Stake functionality
         document.getElementById("stakePickleButton").addEventListener("click", async function() {
-            const pickleAmount = document.getElementById("stakeAmount").value;
-            const amountToStake = web3.utils.toWei(stakeAmount, 'ether'); // Convert $PICKLE amount to Wei
+            const stakeInput = document.getElementById("stakeAmount");
+            const stakeAmount = stakeInput.value; // Get the stake amount from the input
+        
+            // Convert the stake amount to a string to avoid precision errors
+            const amountToStake = web3.utils.toWei(stakeAmount.toString(), 'ether');// Convert $PICKLE amount to Wei
 
             try {
                 const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
