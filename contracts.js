@@ -103,8 +103,8 @@ window.addEventListener('load', function() {
         });
         // Adding Stake functionality
         document.getElementById("stakePickleButton").addEventListener("click", async function() {
-            const pickleAmount = document.getElementById("pickleAmount").value;
-            const amountToStake = web3.utils.toWei(pickleAmount, 'ether'); // Convert $PICKLE amount to Wei
+            const pickleAmount = document.getElementById("stakeAmount").value;
+            const amountToStake = web3.utils.toWei(stakeAmount, 'ether'); // Convert $PICKLE amount to Wei
 
             try {
                 const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
