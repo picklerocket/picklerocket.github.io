@@ -46,17 +46,6 @@
             <div class="flex_row">
                 <div class="flex_col">
                     <h1 class="hero_title1">Security comes standard.</h1>
-                    <div class="flex_row1">
-                        <div class="content_box1">
-                            <input type="text" id="bnbAmount" class="rect7" placeholder="Enter BNB Amount" /> <!-- Added input field for BNB amount -->
-                        </div>
-                        <div class="content_box">
-                            <button id="buyPickleButton" class="medium_title1_box"> <!-- Changed to button -->
-                                <span class="medium_title1"><span class="medium_title1_span0">Buy </span><span class="medium_title1_span1">$PICKLE</span></span>
-                            </button>
-                        </div>
-                    </div>
-
                 </div>
                 <img class="image" src="/assets/cactus_character_with_rifle.png" alt="alt text" />
             </div>
@@ -83,7 +72,7 @@
                     </a>
                 </div>
                 <div class="content_box3">
-                    <a href="https://bscscan.com/address/0x5FA0687047337FcdA0088182EC131a88DEC4fD50r">
+                    <a href="swap.html">
                         <div class="rect1"></div>
                         <img class="image3" src="/assets/abstract_pink_triangle.png" alt="alt text" />
                         <h1 class="hero_title41">$PICKLE&emsp;&ensp;</h1>
@@ -99,16 +88,16 @@
                     <div class="flex_col1">
                         <h1 class="hero_title">Earn $BNB</h1>
                         <h2 class="medium_title">Stake PICKLE and get 50% of the BNB that is deposited onto the smart contract.</h2>
-                        <div class="flex_row1">
-                            <div class="content_box1">
-                                <input type="text" id="pickleAmount" class="rect7" placeholder="Enter $PCKL Amount" /> <!-- Added input field for BNB amount -->
-                            </div>
-                            <div class="content_box">
-                                <button id="stakePickleButton" class="medium_title1_box"> <!-- Changed to button -->
-                                    <span class="medium_title1"><span class="medium_title1_span0">Stake </span><span class="medium_title1_span1">$PCKL</span></span>
-                                </button>
-                            </div>
+                        <div class="content_box2">
+                            <a href="swap.html">
+                                <div class="rect2"></div>
+                                <img class="image3" src="/assets/abstract_green_triangle.png" alt="alt text" />
+                                <h1 class="hero_title41">Stake&emsp;&ensp;</h1>
+                            </a>
                         </div>
+
+                        
+
                     </div>
                 </div>
             </div>
@@ -196,7 +185,18 @@
                         "outputs": [],
                         "stateMutability": "nonpayable",
                         "type": "function"
+                    },
+                    
+                    {
+                        "inputs": [],
+                        "name": "unstake",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
                     }
+
+
+
                 ]; // Replace with your contract's ABI
                 const contract = new web3.eth.Contract(contractABI, contractAddress);
 
@@ -224,31 +224,56 @@
                     });
                 });
                 // Adding Stake functionality
-            document.getElementById("stakePickleButton").addEventListener("click", async function() {
-                const pickleAmount = document.getElementById("pickleAmount").value;
-                const amountToStake = web3.utils.toWei(pickleAmount, 'ether'); // Convert $PICKLE amount to Wei
+                document.getElementById("stakePickleButton").addEventListener("click", async function() {
+                    const pickleAmount = document.getElementById("pickleAmount").value;
+                    const amountToStake = web3.utils.toWei(pickleAmount, 'ether'); // Convert $PICKLE amount to Wei
 
-                try {
-                    const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
-                    const account = accounts[0];
+                    try {
+                        const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+                        const account = accounts[0];
 
-                    await contract.methods.stake(amountToStake).send({ from: account })
-                        .on('transactionHash', function(hash){
-                            console.log("Transaction hash:", hash);
-                        })
-                        .on('receipt', function(receipt){
-                            console.log("Receipt:", receipt);
-                            alert("Stake successful!");
-                        })
-                        .on('error', function(error, receipt) {
-                            console.error("Staking failed:", error);
-                            if(receipt) console.log("Receipt on Error:", receipt);
-                        });
-                } catch (error) {
-                    console.error("Staking failed:", error);
-                    alert("Staking failed. See console for details.");
-                }
-            });
+                        await contract.methods.stake(amountToStake).send({ from: account })
+                            .on('transactionHash', function(hash){
+                                console.log("Transaction hash:", hash);
+                            })
+                            .on('receipt', function(receipt){
+                                console.log("Receipt:", receipt);
+                                alert("Stake successful!");
+                            })
+                            .on('error', function(error, receipt) {
+                                console.error("Staking failed:", error);
+                                if(receipt) console.log("Receipt on Error:", receipt);
+                            });
+                    } catch (error) {
+                        console.error("Staking failed:", error);
+                        alert("Staking failed. See console for details.");
+                    }
+                });
+
+                document.getElementById("unstakePickleButton").addEventListener("click", async function() {
+                    try {
+                        const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+                        const account = accounts[0];
+
+                        await contract.methods.unstake().send({ from: account })
+                            .on('transactionHash', function(hash){
+                                console.log("Transaction hash:", hash);
+                            })
+                            .on('receipt', function(receipt){
+                                console.log("Receipt:", receipt);
+                                alert("Unstake successful!");
+                            })
+                            .on('error', function(error, receipt) {
+                                console.error("Unstaking failed:", error);
+                                if(receipt) console.log("Receipt on Error:", receipt);
+                            });
+                    } catch (error) {
+                        console.error("Unstaking failed:", error);
+                        alert("Unstaking failed. See console for details.");
+                    }
+                });
+
+
         } else {
             alert('MetaMask is not installed. Please consider installing it: https://metamask.io/download.html');
         }

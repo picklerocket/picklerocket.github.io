@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickle Finance Operations</title>
+    <link rel="stylesheet" type="text/css" href="css/swap.css" />
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.0/dist/web3.min.js"></script>
+</head>
+<body>
+
+    <div class="wallet-container">
+        <button id="connectWalletButton" class="button">Connect Wallet</button>
+        <div id="walletInfo" class="wallet-info hidden">
+            <span id="walletAddress"></span>
+            <span id="walletBalance"></span>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <h1>Manage Your PICKLE</h1>
+        <div class="input-group">
+            <input type="text" id="bnbAmount" class="input-field" placeholder="Enter $BNB Amount" />
+            <button id="buyPickleButton" class="button regular-button">Buy $PICKLE</button>
+        </div>
+        <div class="input-group">
+            <input type="text" id="stakeAmount" class="input-field" placeholder="Enter $PICKLE Amount" />
+            <button id="stakePickleButton" class="button regular-button">Stake $PICKLE</button>
+        </div>
+        <div class="input-group">
+            <input type="text" id="unstakeAmount" class="input-field" placeholder="Enter $PICKLE Amount" />
+            <button id="unstakePickleButton" class="button regular-button">Unstake $PICKLE</button>
+        </div>
+        <div class="input-group">
+            <span id="accumulatedDividends" class="accumulated-dividends">Accumulated Dividends: 0</span>
+            <button id="withdrawDividendsButton" class="button regular-button">Withdraw Dividends</button>
+        </div>
+               
+    </div>
+    <script src="/contracts.js"></script>
+</body>
+</html>

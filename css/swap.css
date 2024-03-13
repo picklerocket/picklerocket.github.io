@@ -1,0 +1,173 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #DFF0D8; /* New greenish background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wallet-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.wallet-info span {
+    display: block;
+    margin: 5px 0;
+}
+.container {
+    width: 80%;
+    max-width: 1000px; /* Adjusted for a wider form */
+    padding: 40px;
+    background: #DFF0D8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Optional: added a slight border radius to the container */
+    margin: 20px; /* Adding some margin around the container */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between; /* Adds space between the input and the button */
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.input-field {
+    flex-grow: 1;
+    width: calc(75% - 10px); /* 75% width minus the gap */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    margin-right: 20px; /* Space between input and button */
+}
+
+.button {
+    flex: 0 0 auto; /* Do not grow, do not shrink, and is initially sized based on its width property */
+    padding: 0.8em 1em;
+    background-color: rgb(163, 181, 57);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Do not set width here if you want different sizes for each button */
+}
+
+.regular-button {
+    width: 200px; /* All buttons will have the same width */
+    flex: 0 0 200px; /* This ensures the button does not grow or shrink from the 200px width */
+}
+
+.connect-button {
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+.button:hover {
+    background-color: rgb(143, 161, 37);
+}
+
+@media only screen and (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-field, .button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .button {
+        width: 100%; /* Full width for small devices */
+    }
+}
+
+.connect-wallet {
+    background-color: rgb(163, 181, 57); /* Dark blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: rgb(163, 181, 57); /* Slightly darker on hover for interaction feedback */
+}
+
+.connect-wallet:active {
+    background-color: rgb(163, 181, 57); /* Even darker to simulate the button being pressed */
+}
+
+
+/* This is for the positioning and sizing of the wallet button and info */
+.wallet-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* Make sure it's above other elements */
+}
+
+.connect-wallet {
+    background-color: rgb(163, 181, 57); /* Button color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px; /* Increased padding for a larger button */
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-left: 20px; /* Add some space between the info and button */
+}
+
+.connect-wallet:hover {
+    background-color: rgb(170, 140, 90);; /* Slightly darker on hover */
+}
+
+.wallet-info {
+    background-color: #605858; /* Background color for the wallet info box */
+    color: white; /* Text color for the wallet info */
+    border-radius: 5px;
+    padding: 10px;
+    display: flex; /* Use flexbox to display the spans inline */
+    align-items: center;
+}
+
+.wallet-info span {
+    margin-right: 15px; /* Add space between the address and balance */
+    white-space: nowrap; /* Prevent the text from wrapping */
+}
+
+.wallet-connected {
+    cursor: pointer; /* Indicate it's clickable */
+    background-color: rgb(143, 161, 37); /* Change color to indicate it's active */
+}
+
+.hidden {
+    display: none;
+}
